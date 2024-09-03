@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+    
+        .laptop-frame {
+            width: 80%;
+            max-width: 700px;
+            height: 450px;
+            background-color: #333;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            padding: 20px;
+            animation: slideIn 0.8s ease-in-out;
+        }
+    
+        .laptop-screen {
+            background-color: #fff;
+            border-radius: 10px;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInUp 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+    
+        form {
+            width: 100%;
+            opacity: 0;
+            animation: fadeInUp 1s ease-in-out forwards;
+            animation-delay: 1s;
+        }
+    
+        input[type="text"],
+        input[type="password"] {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+    
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #007bff;
+        }
+    
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        button:hover {
+            background-color: #0056b3;
+        }
+    
+        a {
+            display: block;
+            text-align: center;
+            margin:10px;
+            color: #007bff;
+            text-decoration: none;
+            opacity: 0;
+            animation: fadeInUp 1s ease-in-out forwards;
+            animation-delay: 1.5s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="laptop-frame">
+        <div class="laptop-screen">
+            <h1>Login User</h1>
+            <form action="/login" method="post">
+                <input type="text" name="email" placeholder="Enter email" required>
+                <input type="password" name="password" placeholder="Enter your password" required>
+                <a href="register">New user</a>
+                <button type="submit">Log in</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

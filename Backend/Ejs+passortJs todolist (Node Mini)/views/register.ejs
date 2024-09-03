@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4; /* Background color */
+        animation: fadeIn 1s ease-in-out;
+    }
+    form {
+        width: 30%;
+        padding: 20px;
+        background-color: #fff;
+        border: 5px solid #f4f4f4; /* Border with body background color */
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        animation: fadeInUp 0.8s ease-in-out forwards;
+    }
+        h1 { animation-delay: 0.2s; }
+        form { animation-delay: 0.4s; }
+        input, button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            transition: 0.3s;
+        }
+        input:focus { border-color: #007bff; }
+        button {
+            background-color: #007bff; color: #fff; border: none;
+            margin-top:10px ;
+        }
+        button:hover { background-color: #0056b3; }
+        a {
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+        }
+        a:hover { text-decoration: underline; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <form action="/register" method="post">
+        <h1>Register User</h1>
+        <input type="text" name="firstName" placeholder="Enter firstName" required>
+        <input type="text" name="lastName" placeholder="Enter lastName">
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="tel" name="mobileNo" placeholder="Enter mobileNo" pattern="\d{10}" title="Please enter a 10-digit mobile number" required>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <a href="login">You already have an account?</a>
+        <button type="submit">Register</button>
+    </form>    
+</body>
+</html>

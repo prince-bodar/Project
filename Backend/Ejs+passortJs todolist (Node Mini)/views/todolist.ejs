@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e9ecef;
+            animation: fadeIn 1s ease-in-out;
+        }
+    
+        h1, table {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-in-out forwards;
+        }
+    
+        h1 {
+            margin-bottom: 20px;
+            animation-delay: 0.2s;
+            text-align: center;
+            color: #333;
+        }
+    
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            animation-delay: 0.4s;
+        }
+    
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <div>
+        <table>
+            <h1>Todo List</h1>
+            <thead>
+                <tr>
+                    <th>firstName</th>
+                    <th>lastName</th>
+                    <th>email</th>
+                    <th>MobileNo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% users.forEach(function(user) { %>
+                    <tr>
+                        <td><%= user.firstName %></td>  
+                        <td><%= user.lastName %></td>  
+                        <td><%= user.email %></td>  
+                        <td><%= user.mobileNo.length === 10 ? user.mobileNo : 'Invalid Number' %></td>  
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

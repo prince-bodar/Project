@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "img1":"https://emart.wpthemedemos.com/fashion-hub/wp-content/uploads/sites/4/2023/01/Casual-T-shirts-beige.webp",
+        "name" : "Round Neck T-shirt",
+        "price":80
+
+    },
+    {
+        "id": 2,
+        "img1":"https://emart.wpthemedemos.com/women-fashion/wp-content/uploads/sites/5/2023/01/high-heels-platform-shoe.webp",
+        "name" : "High heels shoe",
+        "price":140.00
+    },
+    {
+        "id": 3,
+        "img1":"https://emart.wpthemedemos.com/fashion-hub/wp-content/uploads/sites/4/2023/01/sports-slacks.webp",
+        "name" : "Sports-slacks",
+        "price":100.00
+
+    },
+    {
+        "id": 4,
+        "img1":"https://emart.wpthemedemos.com/fashion-hub/wp-content/uploads/sites/4/2023/01/grey-hill.webp",
+        "name" : "Women grey-hill",
+        "price":240.00 
+    },
+    {
+        "id": 5,
+        "img1":"https://emart.wpthemedemos.com/fashion-hub/wp-content/uploads/sites/4/2022/12/sunglass.webp",
+        "name" : "Round Neck T-shirt",
+        "price":299
+
+    },
+    {
+        "id": 6,
+        "img1":"https://emart.wpthemedemos.com/fashion-hub/wp-content/uploads/sites/4/2022/12/Check-scarf.webp",
+        "name" : "Check-scarf",
+        "price":75.00
+
+    },
+    {
+        "id": 7,
+        "img1":"https://emart.wpthemedemos.com/fashion-hub/wp-content/uploads/sites/4/2022/12/flip-flop-slider-023.webp",
+        "name" : "Rust colour sliders",
+        "price":146.00
+
+    },
+    {
+        "id": 8,
+        "img1":"https://emart.wpthemedemos.com/fashion-hub/wp-content/uploads/sites/4/2022/12/Violate-Jacket.webp",
+        "name" : "Violate-jacket",
+        "price":155.00
+
+    }
+]

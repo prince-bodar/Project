@@ -1,0 +1,234 @@
+/* /* 
+/* web 1 page */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.header-1 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: black;
+  color: #ccc;
+}
+.firsthead .header1span1 {
+  margin-left:200px;
+}
+.firsthead .header1span2 {
+  margin-left: 270px;
+}
+.firsthead .header1span3 {
+  margin-left: 50px;
+}
+.firsthead .header1span4 {
+ margin-left: 50px;
+}
+
+/* 1 pag navbar */
+
+.main-head img {
+  height: 60px;
+  width: 100px;
+  margin-left: 50px;
+}
+.main-head a {
+  color: black;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+.main-head {
+  background-color: #ccc;
+  display: flex;
+  letter-spacing: 1px;
+}
+.main-head dl {
+  padding-top: 10px;
+  padding-left: 100px;
+  display: flex;
+  gap: 60px;
+}
+.icons-head i{
+   margin-left: 30px;
+}
+/* after line of nav bar */
+
+.container-1 {
+  padding-left: 20px;
+  color: orangered;
+  padding: 10px 100px;
+  display: flex;
+  gap: 200px;
+  text-align: center;
+  align-items: center;
+}
+.main-img {
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/asset\ 5.jpeg');
+  background-size: cover;
+}
+.main-img .in-img .p1 {
+  text-align: center;
+  padding-top: 200px;
+  font-size: 2rem;
+}
+.main-img .in-img .p2 {
+  text-align: center;
+  font-size: 4rem;
+}
+.head-containt {
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* offer vegtables in main tag */
+
+.offers-vegitables{
+  display: flex;
+  padding:20px 50px 0px 50px;
+}
+.offers-vegitables .offer-vegtable-img-1{
+  background-image: url("../img/asset\ 11.jpeg");
+  height: 300px;
+  width: 521px;
+}
+.offers-vegitables .offer-vegtable-2{
+  background-image: url("../img/asset\ 12.jpeg");
+  height: 300px;
+  width: 560px;
+  margin-left: 30px;
+}
+.offers-vegitables .img-paragraphs
+{
+  font-size: 40px;
+  padding-left: 10px;
+}
+.offers-vegitables  button{
+  border-radius: 20px;
+  background-color: #ff893a;
+  color: aliceblue;
+  height: 40px;
+  width: 100px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.offers-vegitables  button:hover{
+  background-color: #fff;
+  color:#ff893a;
+}
+
+
+/* shot category  in main tag*/
+
+.shop-category {
+  margin-top: 100px;
+  display: flex;
+  gap: 40px;
+  padding-left: 18px;
+  box-sizing: border-box;
+}
+.shop-category .img1 {
+  border-radius: 40%;
+  background-color: rgba(10, 10, 10, 0.4);
+  box-shadow: 10px 10px 10px gray;
+  text-align: center;
+}
+.shop-category .img2 {
+  border-radius: 40%;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  box-shadow: 10px 10px 10px gray;
+}
+.shop-category .img3 {
+  border-radius: 40%;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 10px gray;
+  text-align: center;
+}
+.shop-category .img4 {
+  border-radius: 40%;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 10px gray;
+  text-align: center;
+}
+.shop-category .img5 {
+  border-radius: 40%;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 10px gray;
+  text-align: center;
+}
+
+.shop-category img:hover{
+  transform: scale(1.2);
+  border-radius: 50%;
+}
+
+
+/* trending  products */
+
+.trending .trendig-head p{
+  text-align: center;
+  color: #373434;
+  font-size: 50px;
+  margin-top: 140px;
+}
+.trending-product{
+  display: flex;
+  padding-left: 100px;
+  gap: 100px;
+  font-size: 0px;
+}
+.trending-product-1:hover{
+  filter: drop-shadow(0px 10px 20px #751310);
+    text-align: center;
+    font-size: 40px;
+
+}.trending-product-2:hover{
+  filter: drop-shadow(0px 10px 20px #f81a13);
+    text-align: center;
+    font-size: 40px;
+}.trending-product-3:hover{
+  filter: drop-shadow(0px 10px 20px #f6ff00);
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/* our produts */
+.our-products h1{
+  font-size: 60px;
+  text-align: center;
+  margin-top: 100px;
+}
+.our-products .fleximg1{
+  display: flex;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 50px;
+}
+.our-products .fleximg1 figcaption{
+  margin-left: 60px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.our-products .fleximg1 img{
+  display: flex;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 60px;
+}
+.our-products .fleximg2{
+  display: flex;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 60px;
+}
+.our-products .fleximg2 img{
+  display: flex;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.our-products .fleximg2 figcaption{
+  margin-left: 60px;
+  margin-top: 15px;
+ }  
+ 
