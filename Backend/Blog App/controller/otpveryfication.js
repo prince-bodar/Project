@@ -1,29 +1,29 @@
 const otpGenerator = require('otp-generator')
 const nodemailer = require('nodemailer')
+require('dotenv').config()
 const userOTP = require('../model/user.model')
 
 exports.generateotp = async (req,res) => {
+    try {
     const { email } = req.body;
-
-    const otp = otpGenerator.generate(6, { 
+    const otp = otpGenerator.generate(4, { 
         digits: true, 
         upperCaseAlphabets: false,
         lowerCaseAlphabets: false, 
         specialChars: false 
       });
     console.log(otp); 
-    try {
         await userOTP.create({ email, otp });
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'bodarprince2@gmail.com',
-                pass: 'ymfjqfxmqcsthxjh'
+                user: process.env.EMAIL,
+                pass: process.env.PASS,
             }
         });
         
         await transporter.sendMail({
-            from: 'bodarprince2@gmail.com',
+            from:process.env.EMAIL,
             to: email,
             subject: 'OTP Verification',
             text: `Your OTP for verification is: ${otp}`

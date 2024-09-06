@@ -9,3 +9,5 @@ blogRoutes.post("/", verifyToken ,addBlog);
 
 
 module.exports = blogRoutes;
+
+
