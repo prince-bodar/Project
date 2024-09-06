@@ -10,7 +10,8 @@ const otpSchema  = mongoose.Schema({
         required:true,
     },
 },{
-    versionKey: false
+    versionkey:false,
+    timestamp:true
 });
 
 

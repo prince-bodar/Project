@@ -75,7 +75,7 @@ exports.verifyotp = async (req, res) => {
         if (otpRecord) {
             res.status(200).redirect("/api/blog");
         } else {
-            res.status(400).send('Invalid OTP');
+            res.status(400).render('otp.ejs');
         }
     } catch (error) {
         console.error(error);
