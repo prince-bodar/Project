@@ -45,7 +45,7 @@
             max-width: 400px;
             opacity: 0;
             transform: translateY(30px);
-            animation: slideIn 1s forwards 1.5s;
+            animation: slideIn 1s forwards 0.5s;
         }
     
         @keyframes fadeIn {
@@ -124,6 +124,7 @@
         
         <label for="password">Password:</label>
         <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        <a href="/api/user/forgotpassword">Forgot Password ?</a>
         <a href="/api/user/register">New User Here</a>
         <button type="submit">Login</button>
     </form>
