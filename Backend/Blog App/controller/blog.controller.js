@@ -24,3 +24,4 @@ exports.addBlog = async (req, res) => {
         res.json({ messag: "Server error..." });
     }
 };
+

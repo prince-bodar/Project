@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTP verification</title>
+    <title>Forgot Password</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -118,12 +118,12 @@
     
 </head>
 <body>
-    <form action="/api/user/verifyotp" method="post">
-        <h1>OTP Sent In Your Email</h1>
-        <label for="otp">Enter OTP Here:</label>
-        <input type="number" name="otp" id="otp" placeholder="Enter your OTP" pattern="\d{4}" title="Please enter 4 digit number"  required>
-        <a href="/api/user/resendotp">Resend OTP</a>
-        <button type="submit">Verify OTP</button>
+    <form action="/api/user/generateotp" method="post">
+        <h1>Forgot Password :</h1>
+       <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+        <button type="submit">Verify Email</button>
     </form>
 </body>
 </html>

@@ -55,15 +55,3 @@ exports.loginUser = async (req, res) => {
         res.json({ message: "Server error" });
     }
 };
-
-exports.logout = async (req, res) => {
-    try {
-        req.logout((err) => {
-            if (err) return next(err);
-            res.redirect('/api/user/login');
-        });
-    } catch (error) {
-        console.error(err);
-        res.status(500).json({ message: 'internal server error...' });
-    }
-}
